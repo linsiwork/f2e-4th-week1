@@ -5,12 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="lin" />
-    <title>Document</title>
+    <title>The F2E</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <!--設定css -->
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <h1>test</h1>
-    <p>ffow</p>
+    <!-- fist pege -->
+
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5 fw-bold" href="#">THE F2E</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav text-center">
+            <li class="nav-item mx-4">
+              <a class="nav-link text-color-y ms-auto" href="#">關卡資訊</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-color-y" href="#">攻略資訊</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-color-y" href="#">求職專區</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav text-center mx-3">
+            <li class="nav-item mx-2">
+              <a class="nav-link mt-1 text-white" href="#"
+                ><button type="button " class="load">登入</button></a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#"
+                ><button type="button " class="attend">立即報名</button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div
+        class="d-flex flex-column text-center justify-content-center align-items-center"
+      >
+        <div class="col-8">
+          <img src="/img/Banner title.svg" alt="title" class="img-fluid" />
+        </div>
+        <div class="col-2 mt-5"><img src="/img/arrow.svg" alt="arrow" /></div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div
+        class="d-flex flex-column text-center justify-content-center align-items-center"
+      >
+        <div class="col-4">
+          <p>
+            <span class="p1 typing"></span><span class="cursor typing">_</span>
+          </p>
+        </div>
+        <div class="col-4 mt-5">
+          <p>
+            <span class="p2 typing"></span><span class="cursor typing">_</span>
+          </p>
+        </div>
+        <div class="col-4 mt-5">
+          <p>
+            <span class="p3 typing"></span><span class="cursor typing">_</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="background-color: #001e40; height: 280px">
+      <div
+        class="d-flex flex-column text-center justify-content-center align-items-center"
+      >
+        <div class="col zindex-1 imgho">
+          <img
+            src="./img/滑鼠互動效果.svg"
+            class="img-fluid"
+            alt="滑鼠互動效果"
+          />
+        </div>
+        <div class="col zindex-3 position-relative p5">
+          <p>互動式網頁設計</p>
+          <p>UI 設計師 x 前端工程師</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">2</div>
+      </div>
+    </div>
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col">2</div>
+      </div>
+    </div> -->
+    <!-- 引入 GSAP 核心、兩個套件（ScrollTrigger、TextPlugin）     -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./do.js"></script>
   </body>
 </html>
