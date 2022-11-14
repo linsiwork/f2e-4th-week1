@@ -67,3 +67,113 @@ typingline.fromTo(
   },
   "<"
 );
+
+const box1 = document.querySelector(".box1");
+const box2 = document.querySelector(".box2");
+const box3 = document.querySelector(".box3");
+
+ScrollTrigger.create({
+  //以box2作為觸發時機
+  trigger: box1,
+  markers: false,
+
+  //向下滾動進入start點時觸發callback
+  onEnter: function () {
+    animated(box1);
+  },
+
+  //向下滾動超過end點時觸發callback
+  onLeave: function () {
+    hide(box1);
+  },
+
+  //向上滾動超過end點時觸發（回滾時觸發）callback
+  onEnterBack: function () {
+    animated(box1);
+  },
+});
+ScrollTrigger.create({
+  //以box2作為觸發時機
+  trigger: box2,
+  markers: false,
+
+  //向下滾動進入start點時觸發callback
+  onEnter: function () {
+    animatedbac(box2);
+  },
+
+  //向下滾動超過end點時觸發callback
+  onLeave: function () {
+    hide(box2);
+  },
+
+  //向上滾動超過end點時觸發（回滾時觸發）callback
+  onEnterBack: function () {
+    animatedbac(box2);
+  },
+});
+ScrollTrigger.create({
+  //以box2作為觸發時機
+  trigger: box3,
+  markers: false,
+
+  //向下滾動進入start點時觸發callback
+  onEnter: function () {
+    animated(box3);
+  },
+
+  //向下滾動超過end點時觸發callback
+  onLeave: function () {
+    hide(box3);
+  },
+
+  //向上滾動超過end點時觸發（回滾時觸發）callback
+  onEnterBack: function () {
+    animated(box3);
+  },
+});
+function animated(element) {
+  let x = -300;
+
+  //設定元素初始值
+  element.style.transform = `translate(${x}px, 0px)`;
+
+  gsap.fromTo(
+    element,
+    { x: x, y: 0, opacity: 0, visibility: "hidden" },
+    {
+      duration: 4,
+      delay: 0.2,
+      x: 0,
+      y: 0,
+      visibility: "visible",
+      opacity: "1",
+      ease: "expo", // 元素的運動速度變化
+      overwrite: "auto",
+    }
+  );
+}
+function animatedbac(element) {
+  let x = 300;
+
+  //設定元素初始值
+  element.style.transform = `translate(${x}px, 0px)`;
+
+  gsap.fromTo(
+    element,
+    { x: x, y: 0, opacity: 0, visibility: "hidden" },
+    {
+      duration: 4,
+      delay: 0.2,
+      x: 0,
+      y: 0,
+      visibility: "visible",
+      opacity: "1",
+      ease: "expo", // 元素的運動速度變化
+      overwrite: "auto",
+    }
+  );
+}
+function hide(element) {
+  gsap.set(element, { opacity: 0, visibility: "hidden" });
+}

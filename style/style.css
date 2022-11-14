@@ -2,7 +2,6 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  color: aliceblue;
 }
 
 body {
@@ -66,4 +65,40 @@ body {
 
 .p5 {
   margin-top: -25%;
+}
+
+.text-color-b {
+  color: #002d5f;
+}
+
+.lh-0-8 {
+  line-height: 0.8 !important;
+}
+
+.pbtn1 {
+  padding: 10px;
+  background-color: #e5e57e;
+  color: #002d5f;
+}
+.pbtn1 .bi-chevron-right {
+  color: #1c1c1c;
+}
+
+.ra {
+  border-radius: 40px;
+}
+
+.boradforex {
+  border: 4px solid #4fc8e0;
+  border-radius: 40px;
+}
+
+.m-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.m-11 {
+  margin-left: 10px;
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
