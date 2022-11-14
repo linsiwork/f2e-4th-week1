@@ -1,31 +1,6 @@
 //額外引入的 ScrollTrigger 與 TextPlugin 套件
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
-// gsap.to(".hand", { width: 630, duration: 3, repeat: -1 });
-
-// gsap.fromTo("h1", { opacity: 0 }, { opacity: 1, duration: 5, repeat: -1 });
-// const timeline = gsap.timeline(repeat: -1);
-// timeline.to(".box", { x: 100, duration: 1 });
-// timeline.to(".box", { y: 100, duration: 1 });
-// const tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".anitio", // 決定scrolltrigger要以哪一個元素作為觸發基準點
-//     markers: true, // 開啟start & end標記點，單純方便瀏覽動畫開始與結束點
-//     start: "top 35%", // 決定動畫開始點的位置
-//     end: "top 1%", // 決定動畫結束點的位置
-//     scrub: true, //重要！開啟scrub來決定動畫播放是否依賴視窗滾動
-//   },
-// });
-// tl.to(".box1", {
-//   backgroundColor: "yellow",
-//   yPercent: "-50",
-//   duration: 20,
-// }).to(".box1", {
-//   yPercent: "-50", // translate(0, -100%)
-//   duration: 20,
-//   position: "absolute",
-//   backgroundColor: "red",
-// });
 const typingline = gsap.timeline();
 
 typingline.to(".p1", {
